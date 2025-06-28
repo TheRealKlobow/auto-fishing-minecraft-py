@@ -33,15 +33,11 @@ pip install sounddevice numpy pyautogui
 ⚙️ Configuration
 Make sure to set the correct microphone input device index:
 
-python
-Kopiér
-Rediger
+
 with sd.InputStream(device=31, callback=sound_trigger):
 To find your device index:
 
-python
-Kopiér
-Rediger
+p
 print(sd.query_devices())
 You can also tweak the sensitivity and delay settings at the top of the script:
 
@@ -50,6 +46,7 @@ Kopiér
 Rediger
 threshold = 0.1  # Sensitivity to sound
 cooldown = 1.0   # Minimum delay between actions
+
 ⚠️ Disclaimer
 Use at your own risk.
 This script simulates user input and may violate the terms of service in some games.
